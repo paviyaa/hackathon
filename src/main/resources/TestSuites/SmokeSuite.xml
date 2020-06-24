@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeSuite">
+	<test name="Upcoming Requirement">
+		<groups>
+			<run>
+				<include name="SmokeTest" />
+			</run>
+		</groups>
+		<classes>
+			<class name="TS_01.UpcomingRequirement" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Used Cars Chennai - Direct">
+		<groups>
+			<run>
+				<include name="SmokeTest" />
+			</run>
+		</groups>
+		<classes>
+			<class name="TS_02.Usedcarschn" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Valid Login">
+		<groups>
+			<run>
+				<include name="SmokeTest" />
+			</run>
+		</groups>
+		<classes>
+			<class name="TS_03.ValidLogin" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

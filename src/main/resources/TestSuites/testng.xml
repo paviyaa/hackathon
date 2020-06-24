@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Upcoming Bikes Search">
+		<classes>
+			<class name="TS_01.UpcomingBikesSearchBar" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Price">
+		<classes>
+			<class name="TS_01.Price" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Honda Upcoming">
+		<classes>
+			<class name="TS_01.HondaUpcoming" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Upcoming Bikes Exp Date">
+		<classes>
+			<class name="TS_01.UpcomingBikesExpdate" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Upcoming Requirement">
+		<classes>
+			<class name="TS_01.UpcomingRequirement" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Variants Bike">
+		<classes>
+			<class name="TS_01.VariantsBikes" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Used Cars Chennai - Search">
+		<classes>
+			<class name="TS_02.SearchusedCars" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Used Cars Chennai - Direct">
+		<classes>
+			<class name="TS_02.Usedcarschn" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Valid Login">
+		<classes>
+			<class name="TS_03.ValidLogin" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Invalid Email Login">
+		<classes>
+			<class name="TS_03.InvalidEmailLogin" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Incorrect Email Login">
+		<classes>
+			<class name="TS_03.IncorrectEmailLogin" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Invalid Password Login">
+		<classes>
+			<class name="TS_03.InvalidPwdLogin" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Incorrect Password Login">
+		<classes>
+			<class name="TS_03.IncorrectPwdLogin" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Search By Brand">
+		<classes>
+			<class name="TS_04.SearchByBrand" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Search By Budget">
+		<classes>
+			<class name="TS_04.SearchByBudget" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Search By Engine">
+		<classes>
+			<class name="TS_04.SearchByEngine" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Search By Mileage">
+		<classes>
+			<class name="TS_04.SearchByMileage" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

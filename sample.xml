@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="Environment" value="local" />
+	<test name="Honda Upcoming">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_01.HondaUpcomingEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Price">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_01.priceEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Upcoming Bikes Exp Date">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_01.UpcomingBikesExpdateEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Upcoming Bikes Search">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_01.UpcomingBikesSearchBarEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Upcoming Requirement">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_01.UpcomingRequirementEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Variants Bike">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_01.VariantsBikesEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Used Cars Chennai - Search">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_02.SearchusedCarsEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Used Cars Chennai - Direct">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_02.UsedcarschnEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Invalid Email Login">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_03.InvalidEmailLoginEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Invalid Password Login">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_03.InvalidPwdLoginEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Incorrect Password Login">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_03.InvalidLoginEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Valid Login">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_03.ValidLoginEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Search By Brand">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_04.SearchByBrandEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Search By Budget">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_04.SearchByBudgetEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Search By Engine">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_04.SearchByEngineEditted" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="Environment" value="local" />
+	<test name="Search By Mileage">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="TS_04.SearchByMileageEditted" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

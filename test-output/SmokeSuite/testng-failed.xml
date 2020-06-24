@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeSuite]">
+  <parameter name="Environment" value="local"/>
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="SmokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TS_03.ValidLogin">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="reportSetUp"/>
+          <include name="getResult"/>
+          <include name="test"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+        </methods>
+      </class> <!-- TS_03.ValidLogin -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->
