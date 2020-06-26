@@ -4,7 +4,7 @@
 
 	<test name="Search By Brand">
 		<classes>
-			<class name="TS_04.SearchByBrand" />
+			<class name="TS_02.Usedcarschn" />
 		</classes>
 	</test> <!-- Test -->
 	

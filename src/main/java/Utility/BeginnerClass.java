@@ -45,7 +45,7 @@ public class BeginnerClass {
 
 	@BeforeClass(alwaysRun = true)
 	@Parameters({ "Browser", "Environment", "nodeURL" })
-	public void setUp(@Optional("chrome") String browser, @Optional("local") String environment, String nodeURL) throws IOException {
+	public void setUp(@Optional("chrome") String browser, @Optional("local") String environment,  @Optional("null") String nodeURL) throws IOException {
 		
 		driver = EnvironmentSetup.getDriver(browser, environment, nodeURL);
 		ExtentReport.driver = driver;

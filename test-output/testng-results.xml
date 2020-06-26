@@ -2,16 +2,22 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19913" started-at="2020-06-24T05:33:00Z" finished-at="2020-06-24T05:33:20Z">
+  <suite name="Default suite" duration-ms="11377" started-at="2020-06-26T00:38:48Z" finished-at="2020-06-26T00:38:59Z">
     <groups>
+      <group name="SmokeTest">
+        <method signature="Usedcarschn.clickSearchUsedCarsFromDrpdwn()[pri:1, instance:TS_02.Usedcarschn@7ed7259e]" name="clickSearchUsedCarsFromDrpdwn" class="TS_02.Usedcarschn"/>
+        <method signature="Usedcarschn.navigateToUsedCarsPage()[pri:2, instance:TS_02.Usedcarschn@7ed7259e]" name="navigateToUsedCarsPage" class="TS_02.Usedcarschn"/>
+        <method signature="Usedcarschn.outputDisplay()[pri:3, instance:TS_02.Usedcarschn@7ed7259e]" name="outputDisplay" class="TS_02.Usedcarschn"/>
+        <method signature="Usedcarschn.startBrowser()[pri:0, instance:TS_02.Usedcarschn@7ed7259e]" name="startBrowser" class="TS_02.Usedcarschn"/>
+      </group> <!-- SmokeTest -->
     </groups>
-    <test name="Default test" duration-ms="19913" started-at="2020-06-24T05:33:00Z" finished-at="2020-06-24T05:33:20Z">
-      <class name="TS_01.Price">
-        <test-method status="PASS" signature="reportSetUp()[pri:0, instance:TS_01.Price@35ef1869]" name="reportSetUp" is-config="true" duration-ms="427" started-at="2020-06-24T05:32:59Z" finished-at="2020-06-24T05:33:00Z">
+    <test name="Default test" duration-ms="11377" started-at="2020-06-26T00:38:48Z" finished-at="2020-06-26T00:38:59Z">
+      <class name="TS_02.Usedcarschn">
+        <test-method status="PASS" signature="reportSetUp()[pri:0, instance:TS_02.Usedcarschn@7ed7259e]" name="reportSetUp" is-config="true" duration-ms="504" started-at="2020-06-26T00:38:47Z" finished-at="2020-06-26T00:38:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportSetUp -->
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:TS_01.Price@35ef1869]" name="setUp" is-config="true" duration-ms="16480" started-at="2020-06-24T05:33:00Z" finished-at="2020-06-24T05:33:16Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TS_02.Usedcarschn@7ed7259e]" name="setUp" is-config="true" duration-ms="7607" started-at="2020-06-26T00:38:48Z" finished-at="2020-06-26T00:38:55Z">
           <params>
             <param index="0">
               <value>
@@ -23,99 +29,102 @@
                 <![CDATA[local]]>
               </value>
             </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:TS_01.Price@35ef1869]" name="startBrowser" duration-ms="164" started-at="2020-06-24T05:33:16Z" finished-at="2020-06-24T05:33:16Z">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:TS_02.Usedcarschn@7ed7259e]" name="startBrowser" duration-ms="250" started-at="2020-06-26T00:38:56Z" finished-at="2020-06-26T00:38:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_01.Price@35ef1869]" name="testResult" is-config="true" duration-ms="15" started-at="2020-06-24T05:33:16Z" finished-at="2020-06-24T05:33:16Z">
+        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_02.Usedcarschn@7ed7259e]" name="testResult" is-config="true" duration-ms="18" started-at="2020-06-26T00:38:56Z" finished-at="2020-06-26T00:38:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=startBrowser status=SUCCESS method=Price.startBrowser()[pri:0, instance:TS_01.Price@35ef1869] output={null}]]]>
+                <![CDATA[[TestResult name=startBrowser status=SUCCESS method=Usedcarschn.startBrowser()[pri:0, instance:TS_02.Usedcarschn@7ed7259e] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void TS_01.Price.startBrowser() throws java.io.IOException]]>
+                <![CDATA[public void TS_02.Usedcarschn.startBrowser() throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResult -->
-        <test-method status="PASS" signature="clickUpcomingFromDrpdwn()[pri:1, instance:TS_01.Price@35ef1869]" name="clickUpcomingFromDrpdwn" duration-ms="582" started-at="2020-06-24T05:33:16Z" finished-at="2020-06-24T05:33:17Z">
+        <test-method status="PASS" signature="clickSearchUsedCarsFromDrpdwn()[pri:1, instance:TS_02.Usedcarschn@7ed7259e]" name="clickSearchUsedCarsFromDrpdwn" duration-ms="1751" started-at="2020-06-26T00:38:56Z" finished-at="2020-06-26T00:38:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickUpcomingFromDrpdwn -->
-        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_01.Price@35ef1869]" name="testResult" is-config="true" duration-ms="14" started-at="2020-06-24T05:33:17Z" finished-at="2020-06-24T05:33:17Z">
+        </test-method> <!-- clickSearchUsedCarsFromDrpdwn -->
+        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_02.Usedcarschn@7ed7259e]" name="testResult" is-config="true" duration-ms="21" started-at="2020-06-26T00:38:58Z" finished-at="2020-06-26T00:38:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickUpcomingFromDrpdwn status=SUCCESS method=Price.clickUpcomingFromDrpdwn()[pri:1, instance:TS_01.Price@35ef1869] output={null}]]]>
+                <![CDATA[[TestResult name=clickSearchUsedCarsFromDrpdwn status=SUCCESS method=Usedcarschn.clickSearchUsedCarsFromDrpdwn()[pri:1, instance:TS_02.Usedcarschn@7ed7259e] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void TS_01.Price.clickUpcomingFromDrpdwn() throws java.io.IOException]]>
+                <![CDATA[public void TS_02.Usedcarschn.clickSearchUsedCarsFromDrpdwn() throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResult -->
-        <test-method status="PASS" signature="selectPriceRangeLink()[pri:2, instance:TS_01.Price@35ef1869]" name="selectPriceRangeLink" duration-ms="878" started-at="2020-06-24T05:33:17Z" finished-at="2020-06-24T05:33:18Z">
+        <test-method status="PASS" signature="navigateToUsedCarsPage()[pri:2, instance:TS_02.Usedcarschn@7ed7259e]" name="navigateToUsedCarsPage" duration-ms="352" started-at="2020-06-26T00:38:58Z" finished-at="2020-06-26T00:38:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectPriceRangeLink -->
-        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_01.Price@35ef1869]" name="testResult" is-config="true" duration-ms="13" started-at="2020-06-24T05:33:18Z" finished-at="2020-06-24T05:33:18Z">
+        </test-method> <!-- navigateToUsedCarsPage -->
+        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_02.Usedcarschn@7ed7259e]" name="testResult" is-config="true" duration-ms="10" started-at="2020-06-26T00:38:58Z" finished-at="2020-06-26T00:38:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=selectPriceRangeLink status=SUCCESS method=Price.selectPriceRangeLink()[pri:2, instance:TS_01.Price@35ef1869] output={null}]]]>
+                <![CDATA[[TestResult name=navigateToUsedCarsPage status=SUCCESS method=Usedcarschn.navigateToUsedCarsPage()[pri:2, instance:TS_02.Usedcarschn@7ed7259e] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void TS_01.Price.selectPriceRangeLink()]]>
+                <![CDATA[public void TS_02.Usedcarschn.navigateToUsedCarsPage() throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResult -->
-        <test-method status="PASS" signature="outputDisplay()[pri:3, instance:TS_01.Price@35ef1869]" name="outputDisplay" duration-ms="1030" started-at="2020-06-24T05:33:18Z" finished-at="2020-06-24T05:33:19Z">
+        <test-method status="PASS" signature="outputDisplay()[pri:3, instance:TS_02.Usedcarschn@7ed7259e]" name="outputDisplay" duration-ms="410" started-at="2020-06-26T00:38:58Z" finished-at="2020-06-26T00:38:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- outputDisplay -->
-        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_01.Price@35ef1869]" name="testResult" is-config="true" duration-ms="8" started-at="2020-06-24T05:33:19Z" finished-at="2020-06-24T05:33:19Z">
+        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_02.Usedcarschn@7ed7259e]" name="testResult" is-config="true" duration-ms="11" started-at="2020-06-26T00:38:58Z" finished-at="2020-06-26T00:38:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=outputDisplay status=SUCCESS method=Price.outputDisplay()[pri:3, instance:TS_01.Price@35ef1869] output={null}]]]>
+                <![CDATA[[TestResult name=outputDisplay status=SUCCESS method=Usedcarschn.outputDisplay()[pri:3, instance:TS_02.Usedcarschn@7ed7259e] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void TS_01.Price.outputDisplay()]]>
+                <![CDATA[public void TS_02.Usedcarschn.outputDisplay() throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResult -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TS_01.Price@35ef1869]" name="closeBrowser" is-config="true" duration-ms="705" started-at="2020-06-24T05:33:19Z" finished-at="2020-06-24T05:33:20Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TS_02.Usedcarschn@7ed7259e]" name="closeBrowser" is-config="true" duration-ms="923" started-at="2020-06-26T00:38:58Z" finished-at="2020-06-26T00:38:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:TS_01.Price@35ef1869]" name="flush" is-config="true" duration-ms="233" started-at="2020-06-24T05:33:20Z" finished-at="2020-06-24T05:33:20Z">
+        <test-method status="PASS" signature="flush()[pri:0, instance:TS_02.Usedcarschn@7ed7259e]" name="flush" is-config="true" duration-ms="257" started-at="2020-06-26T00:38:59Z" finished-at="2020-06-26T00:39:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-      </class> <!-- TS_01.Price -->
+      </class> <!-- TS_02.Usedcarschn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

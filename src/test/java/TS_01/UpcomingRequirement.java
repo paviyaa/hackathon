@@ -146,7 +146,7 @@ public class UpcomingRequirement extends Utility.BeginnerClass {
 	
 	}
 
-	// To convert List of Strings into Array of Integers
+	// To convert List of Strings into List of Integers
 	public static List<Integer> getPrice(List<String> priceList) {
 
 		List<String> trimPrice = new ArrayList<String>();
