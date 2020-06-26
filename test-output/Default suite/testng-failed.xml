@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TS_01.UpcomingRequirement">
+      <class name="TS_01.Check">
         <methods>
-          <include name="outputDisplay"/>
           <include name="setUp"/>
+          <include name="test"/>
           <include name="testResult"/>
           <include name="reportSetUp"/>
           <include name="flush"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- TS_01.UpcomingRequirement -->
+      </class> <!-- TS_01.Check -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

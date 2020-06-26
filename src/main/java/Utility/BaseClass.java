@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Properties;
 import java.util.Set;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -18,10 +19,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseClass {
-
-	WebDriver driver;
-	String child;
-	public static int executionCount = 0;
+	
+	static JavascriptExecutor js;
 
 	// Selecting options in dropdown
 	public void selectInDropDown(WebElement el, String choice) {
@@ -65,11 +64,10 @@ public class BaseClass {
 	// Switching from parent tab to child tab
 	public void SwitchToNewWindow(WebDriver driver) {
 		Set<String> winHandles = driver.getWindowHandles();
-		System.out.println(winHandles);
 		Iterator<String> itr = winHandles.iterator();
+		String child = null;
 		while (itr.hasNext()) {
 			child = itr.next();
-			System.out.println(child);
 		}
 		driver.switchTo().window(child);
 	}
@@ -85,5 +83,13 @@ public class BaseClass {
 			e.printStackTrace();
 		}
 		return prop;
+	}
+	
+	public String getEnteredValue (WebElement element) {
+		return js.executeScript("return arguments[0].value;", element).toString();
+	}
+	
+	public void clickElement (WebElement element) {
+		js.executeScript("arguments[0].click();",element);
 	}
 }

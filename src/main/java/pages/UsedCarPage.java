@@ -25,7 +25,7 @@ public class UsedCarPage extends Utility.BaseClass {
 
 	@FindBy(xpath = "//body/ul/li[1]/a[contains( text(),'Chennai')]")
 	WebElement selectCity;
-	
+
 	public UsedCarPage(WebDriver driver) throws Exception {
 		this.driver = driver;
 		this.data = ExcelUtils.readExcel();
@@ -45,14 +45,14 @@ public class UsedCarPage extends Utility.BaseClass {
 
 	// locate and pass the value
 	public void selectCity(String city) {
-		if(executionCount > 0) {
+		if (!getEnteredValue(sendCity).isEmpty()) {
 			sendCity.clear();
 		}
 		sendCity.sendKeys(data.get(city));
-		executionCount++;
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		waitForElement(driver, selectCity);
 		selectCity.click();
-		
+
 	}
 
 }

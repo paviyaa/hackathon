@@ -28,7 +28,7 @@ public class HondaUpcoming extends Utility.BeginnerClass {
 
 		// Initiating cell position for RTM to get update
 		xL.setRowCellValues(caseId);
-		
+
 		// Creating the Test for HTML
 		if (ExtentReport.log == null)
 			ExtentReport.log = ExtentReport.reports.createTest("Upcoming Honda Bikes");

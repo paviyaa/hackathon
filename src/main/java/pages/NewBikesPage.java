@@ -12,7 +12,7 @@ import Utility.ExcelUtils;
 public class NewBikesPage extends Utility.BaseClass {
 	public WebDriver driver;
 	Properties prop;
-	Map<String,String> data;
+	Map<String, String> data;
 
 	@FindBy(xpath = "//form[@id='byBrandSearchFrom']//div//button[contains(text(),'Search')]")
 	WebElement searchBtn;
@@ -40,10 +40,10 @@ public class NewBikesPage extends Utility.BaseClass {
 
 	@FindBy(xpath = "//input[@id='bypricerange100000-200000']")
 	WebElement budgetFilter;
-	
+
 	@FindBy(xpath = "//h1[@class='mb-10 mt-10 mob-pl-15 clr-bl']")
-	//h1[contains(@class,'mt-5 pt-15 n zm-cmn-colorBlack')]
-	WebElement pageTitle;	
+	// h1[contains(@class,'mt-5 pt-15 n zm-cmn-colorBlack')]
+	WebElement pageTitle;
 
 	public NewBikesPage(WebDriver driver) throws Exception {
 		this.driver = driver;
@@ -55,18 +55,17 @@ public class NewBikesPage extends Utility.BaseClass {
 		waitForElement(driver, pageTitle);
 		return pageTitle.getText();
 	}
-	
+
 	// Clicking search button
 	public WebElement getSearchElement() {
 		waitForElement(driver, searchBtn);
 		return searchBtn;
 	}
-	
+
 	// Clicking search button
 	public void clickSearch() {
 		waitForElement(driver, searchBtn);
 		searchBtn.click();
 	}
 
-	
 }

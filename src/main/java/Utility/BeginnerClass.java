@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Properties;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -17,6 +18,7 @@ import org.testng.annotations.Parameters;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
+import setup.DriverSetup;
 import setup.EnvironmentSetup;
 
 public class BeginnerClass {
@@ -31,51 +33,57 @@ public class BeginnerClass {
 
 	@BeforeSuite(alwaysRun = true)
 	public void reportSetUp() {
-		
+
+		// Starting Hub and Node
+		DriverSetup.startHubNode();
+
+		// Creating Extent Report file
 		ExtentReport.createReport();
-		ExtentReport.log=null;
+
+		// Initializing the Input Property file
 		try {
 			prop = BaseClass.loadProp();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+		// Initializing the RTM Excel file
 		ExcelUtils.setUpRTMExcel();
-	
+
 	}
 
 	@BeforeClass(alwaysRun = true)
 	@Parameters({ "Browser", "Environment", "nodeURL" })
-	public void setUp(@Optional("chrome") String browser, @Optional("local") String environment,  @Optional("null") String nodeURL) throws IOException {
-		
+	public void setUp(@Optional("chrome") String browser, @Optional("local") String environment,
+			@Optional("null") String nodeURL) throws IOException {
+
 		driver = EnvironmentSetup.getDriver(browser, environment, nodeURL);
 		ExtentReport.driver = driver;
 		testCaseName = getClass().getSimpleName();
 		xL.reportToExcel(testCaseName + " Test: STARTED");
+		ExtentReport.log = null;
+		BaseClass.js= (JavascriptExecutor) driver;
 
 	}
 
 	@AfterMethod(alwaysRun = true)
 	public void testResult(ITestResult result, Method m) throws IOException {
-		
+
 		ExtentReport.getResult(result);
 
 		// Logging the Test Result in Excel
 		if (result.isSuccess()) {
 			xL.reportToExcel(getClass().getSimpleName() + " Test Case: " + m.getName() + " Test Method: SUCCESS");
-			BaseClass.executionCount = 0;
 		} else {
 			xL.reportToExcel(getClass().getSimpleName() + "Test Case: " + m.getName() + " Test Method: FAILURE");
 			status = "FAIL";
 		}
 
-		rtmExecution = 0;
-	
 	}
-	
+
 	@AfterClass(alwaysRun = true)
 	public void closeBrowser() throws IOException {
 
-		BaseClass.executionCount = 0;
 		// Closing the driver
 		driver.quit();
 
@@ -93,9 +101,9 @@ public class BeginnerClass {
 
 	@AfterSuite(alwaysRun = true)
 	public void flush() {
-		
+
 		ExtentReport.flushReport();
-	
+
 	}
 
 }

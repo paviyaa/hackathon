@@ -64,7 +64,7 @@ public class DriverSetup {
 		return TL_driver.get();
 	}
 
-	public void startHubNode() {
+	public static void startHubNode() {
 		// Launching Hub
 		GridLauncherV3.main(new String[] { "-role", "hub", "-port", "4445" });
 
@@ -83,9 +83,6 @@ public class DriverSetup {
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		System.out.println("Starting " + browser + " on grid");
-
-		// Starting Hub and Node
-		startHubNode();
 
 		// Creating driver
 		switch (browser) {

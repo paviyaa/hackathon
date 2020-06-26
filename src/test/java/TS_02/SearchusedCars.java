@@ -130,4 +130,5 @@ public class SearchusedCars extends Utility.BeginnerClass {
 		report.display(logger, "popular model used cars in selected city are asserted and displayed");
 
 	}
+
 }

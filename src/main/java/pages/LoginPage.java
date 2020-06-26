@@ -14,7 +14,7 @@ public class LoginPage extends Utility.BaseClass {
 
 	public WebDriver driver;
 	Properties prop;
-	Map<String,String> data;
+	Map<String, String> data;
 
 	@FindBy(id = "identifierId")
 	WebElement emailInput;
@@ -39,14 +39,14 @@ public class LoginPage extends Utility.BaseClass {
 
 	@FindBy(id = "feedClose")
 	WebElement exit;
-	
-	@FindBy(xpath="//div[@class='o6cuMc']")
+
+	@FindBy(xpath = "//div[@class='o6cuMc']")
 	WebElement errorincrtEmail;
 
 	public LoginPage(WebDriver driver) throws Exception {
 		this.driver = driver;
 		this.prop = loadProp();
-		this.data =  ExcelUtils.readExcel();
+		this.data = ExcelUtils.readExcel();
 	}
 
 	// locate and Switch to the child tabs
@@ -55,12 +55,11 @@ public class LoginPage extends Utility.BaseClass {
 		SwitchToNewWindow(driver);
 	}
 
-	// locate and pass emailid to the element
+	// locate and pass Email-Id to the element
 	public void setEmail(String emailid) {
-		if(executionCount > 0)
+		if (!getEnteredValue(emailInput).isEmpty())
 			emailInput.clear();
 		emailInput.sendKeys(data.get(emailid));
-		executionCount++;
 	}
 
 	// Clicking next button
@@ -69,25 +68,24 @@ public class LoginPage extends Utility.BaseClass {
 		nextBtn.click();
 	}
 
-	// Locate and return the error msg
+	// Locate and return the error message
 	public String errorEmail() {
 		return errorEmail.getText();
 	}
 
 	// Locate and pass the password to the element
 	public void setPwd(String pass) {
-		if(executionCount > 0)
-			emailInput.clear();
+		if (!getEnteredValue(sendPwd).isEmpty())
+			sendPwd.clear();
 		sendPwd.sendKeys(data.get(pass));
-		executionCount++;
 	}
 
-	// Locate and return the error msg
+	// Locate and return the error message
 	public String errorPwd() {
 		return errorPwd.getText();
 	}
 
-	// Locate and return the error msg
+	// Locate and return the error message
 	public String errorlogin() {
 		return errorLogin.getText();
 	}
@@ -98,12 +96,12 @@ public class LoginPage extends Utility.BaseClass {
 		exit.click();
 	}
 
-	// locate and return welcome msg
+	// locate and return welcome message
 	public String doLogin() {
 		return loginMsg.getText();
 	}
-	
-	// Locate and return the error msg
+
+	// Locate and return the error message
 	public String errorincrtEmail() {
 		return errorincrtEmail.getText();
 	}

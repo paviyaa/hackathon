@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8662" started-at="2020-06-26T02:32:34Z" finished-at="2020-06-26T02:32:43Z">
+  <suite name="Default suite" duration-ms="8597" started-at="2020-06-26T06:36:43Z" finished-at="2020-06-26T06:36:52Z">
     <groups>
-      <group name="SmokeTest">
-        <method signature="UpcomingRequirement.loadUpcomingBikesPage()[pri:1, instance:TS_01.UpcomingRequirement@7ed7259e]" name="loadUpcomingBikesPage" class="TS_01.UpcomingRequirement"/>
-        <method signature="UpcomingRequirement.navigateToUpcomingBikesPage()[pri:2, instance:TS_01.UpcomingRequirement@7ed7259e]" name="navigateToUpcomingBikesPage" class="TS_01.UpcomingRequirement"/>
-        <method signature="UpcomingRequirement.outputDisplay()[pri:3, instance:TS_01.UpcomingRequirement@7ed7259e]" name="outputDisplay" class="TS_01.UpcomingRequirement"/>
-        <method signature="UpcomingRequirement.startBrowser()[pri:0, instance:TS_01.UpcomingRequirement@7ed7259e]" name="startBrowser" class="TS_01.UpcomingRequirement"/>
-      </group> <!-- SmokeTest -->
     </groups>
-    <test name="Default test" duration-ms="8662" started-at="2020-06-26T02:32:34Z" finished-at="2020-06-26T02:32:43Z">
-      <class name="TS_01.UpcomingRequirement">
-        <test-method status="PASS" signature="reportSetUp()[pri:0, instance:TS_01.UpcomingRequirement@7ed7259e]" name="reportSetUp" is-config="true" duration-ms="321" started-at="2020-06-26T02:32:34Z" finished-at="2020-06-26T02:32:34Z">
+    <test name="Default test" duration-ms="8597" started-at="2020-06-26T06:36:43Z" finished-at="2020-06-26T06:36:52Z">
+      <class name="TS_01.Check">
+        <test-method status="PASS" signature="reportSetUp()[pri:0, instance:TS_01.Check@928763c]" name="reportSetUp" is-config="true" duration-ms="1627" started-at="2020-06-26T06:36:42Z" finished-at="2020-06-26T06:36:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportSetUp -->
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TS_01.UpcomingRequirement@7ed7259e]" name="setUp" is-config="true" duration-ms="5953" started-at="2020-06-26T02:32:34Z" finished-at="2020-06-26T02:32:40Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TS_01.Check@928763c]" name="setUp" is-config="true" duration-ms="7329" started-at="2020-06-26T06:36:43Z" finished-at="2020-06-26T06:36:51Z">
           <params>
             <param index="0">
               <value>
@@ -36,95 +30,55 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:TS_01.UpcomingRequirement@7ed7259e]" name="startBrowser" duration-ms="120" started-at="2020-06-26T02:32:40Z" finished-at="2020-06-26T02:32:40Z">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:TS_01.Check@928763c]" name="startBrowser" duration-ms="133" started-at="2020-06-26T06:36:51Z" finished-at="2020-06-26T06:36:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_01.UpcomingRequirement@7ed7259e]" name="testResult" is-config="true" duration-ms="12" started-at="2020-06-26T02:32:40Z" finished-at="2020-06-26T02:32:40Z">
+        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_01.Check@928763c]" name="testResult" is-config="true" duration-ms="12" started-at="2020-06-26T06:36:51Z" finished-at="2020-06-26T06:36:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=startBrowser status=SUCCESS method=UpcomingRequirement.startBrowser()[pri:0, instance:TS_01.UpcomingRequirement@7ed7259e] output={null}]]]>
+                <![CDATA[[TestResult name=startBrowser status=SUCCESS method=Check.startBrowser()[pri:0, instance:TS_01.Check@928763c] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void TS_01.UpcomingRequirement.startBrowser() throws java.io.IOException]]>
+                <![CDATA[public void TS_01.Check.startBrowser() throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResult -->
-        <test-method status="PASS" signature="loadUpcomingBikesPage()[pri:1, instance:TS_01.UpcomingRequirement@7ed7259e]" name="loadUpcomingBikesPage" duration-ms="1568" started-at="2020-06-26T02:32:40Z" finished-at="2020-06-26T02:32:42Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:TS_01.Check@928763c]" name="test" duration-ms="429" started-at="2020-06-26T06:36:51Z" finished-at="2020-06-26T06:36:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadUpcomingBikesPage -->
-        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_01.UpcomingRequirement@7ed7259e]" name="testResult" is-config="true" duration-ms="8" started-at="2020-06-26T02:32:42Z" finished-at="2020-06-26T02:32:42Z">
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_01.Check@928763c]" name="testResult" is-config="true" duration-ms="8" started-at="2020-06-26T06:36:51Z" finished-at="2020-06-26T06:36:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loadUpcomingBikesPage status=SUCCESS method=UpcomingRequirement.loadUpcomingBikesPage()[pri:1, instance:TS_01.UpcomingRequirement@7ed7259e] output={null}]]]>
+                <![CDATA[[TestResult name=test status=SUCCESS method=Check.test()[pri:0, instance:TS_01.Check@928763c] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void TS_01.UpcomingRequirement.loadUpcomingBikesPage() throws java.io.IOException]]>
+                <![CDATA[public void TS_01.Check.test()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResult -->
-        <test-method status="PASS" signature="navigateToUpcomingBikesPage()[pri:2, instance:TS_01.UpcomingRequirement@7ed7259e]" name="navigateToUpcomingBikesPage" duration-ms="67" started-at="2020-06-26T02:32:42Z" finished-at="2020-06-26T02:32:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToUpcomingBikesPage -->
-        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_01.UpcomingRequirement@7ed7259e]" name="testResult" is-config="true" duration-ms="7" started-at="2020-06-26T02:32:42Z" finished-at="2020-06-26T02:32:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=navigateToUpcomingBikesPage status=SUCCESS method=UpcomingRequirement.navigateToUpcomingBikesPage()[pri:2, instance:TS_01.UpcomingRequirement@7ed7259e] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void TS_01.UpcomingRequirement.navigateToUpcomingBikesPage()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testResult -->
-        <test-method status="PASS" signature="outputDisplay()[pri:3, instance:TS_01.UpcomingRequirement@7ed7259e]" name="outputDisplay" duration-ms="271" started-at="2020-06-26T02:32:42Z" finished-at="2020-06-26T02:32:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- outputDisplay -->
-        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_01.UpcomingRequirement@7ed7259e]" name="testResult" is-config="true" duration-ms="7" started-at="2020-06-26T02:32:42Z" finished-at="2020-06-26T02:32:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=outputDisplay status=SUCCESS method=UpcomingRequirement.outputDisplay()[pri:3, instance:TS_01.UpcomingRequirement@7ed7259e] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void TS_01.UpcomingRequirement.outputDisplay() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testResult -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TS_01.UpcomingRequirement@7ed7259e]" name="closeBrowser" is-config="true" duration-ms="630" started-at="2020-06-26T02:32:42Z" finished-at="2020-06-26T02:32:43Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TS_01.Check@928763c]" name="closeBrowser" is-config="true" duration-ms="665" started-at="2020-06-26T06:36:51Z" finished-at="2020-06-26T06:36:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:TS_01.UpcomingRequirement@7ed7259e]" name="flush" is-config="true" duration-ms="178" started-at="2020-06-26T02:32:43Z" finished-at="2020-06-26T02:32:43Z">
+        <test-method status="PASS" signature="flush()[pri:0, instance:TS_01.Check@928763c]" name="flush" is-config="true" duration-ms="180" started-at="2020-06-26T06:36:52Z" finished-at="2020-06-26T06:36:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-      </class> <!-- TS_01.UpcomingRequirement -->
+      </class> <!-- TS_01.Check -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,7 +3,6 @@ package pages;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,7 +13,6 @@ public class HomePage extends Utility.BaseClass {
 
 	public WebDriver driver;
 	Map<String, String> data;
-	JavascriptExecutor js;
 
 	@FindBy(id = "headerSearch")
 	WebElement searchBar;
@@ -54,14 +52,13 @@ public class HomePage extends Utility.BaseClass {
 
 	@FindBy(css = "div.container.m-w-p0:nth-child(18) section:nth-child(5) div.zwn-by_brand.zw-con.pt-0 div.text-center.pl-5.pr-5 > a.zw-cmn-blueColor:nth-child(3)")
 	WebElement upcomingLink;
-	
+
 	@FindBy(xpath = "//form[@id='search-Sml']//span[@id='suggest_crossicon_headerSearch']")
 	WebElement clearSearch;
 
 	public HomePage(WebDriver driver) throws Exception {
 		this.driver = driver;
 		this.data = ExcelUtils.readExcel();
-		this.js = (JavascriptExecutor) driver;
 	}
 
 	// Dropping the NavPanel and returning Brand element
@@ -69,9 +66,9 @@ public class HomePage extends Utility.BaseClass {
 		doAction(driver, newBikesdrp);
 		return brand;
 	}
-	
+
 	public void clickBrand() {
-		js.executeScript("arguments[0].click();", brand);
+		clickElement(brand);
 	}
 
 	// Dropping the NavPanel and returning Upcoming Bike element
@@ -79,20 +76,19 @@ public class HomePage extends Utility.BaseClass {
 		doAction(driver, newBikesdrp);
 		return upcomingBikes;
 	}
-	
+
 	public void clickUpcomingBikesElement() {
-		js.executeScript("arguments[0].click();", upcomingBikes);
+		clickElement(upcomingBikes);
 	}
 
 	// locate and pass the text in search bar
 	public void setSearch(String Text) {
-		if(executionCount > 0)
+		if (!getEnteredValue(searchBar).isEmpty())
 			searchBar.clear();
 		searchBar.sendKeys(data.get(Text));
-		executionCount++;
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		search.click();
-		
+
 	}
 
 	// Click login and proceed with continue with google
@@ -105,11 +101,11 @@ public class HomePage extends Utility.BaseClass {
 			e.printStackTrace();
 		}
 	}
-	
+
 	// Click login and proceed with continue with google
 	public void clickLoginCopy() {
 		login.click();
-		waitForElement(driver,googleLogin);
+		waitForElement(driver, googleLogin);
 	}
 
 	public String getSigninPopupTitle() {
@@ -118,8 +114,7 @@ public class HomePage extends Utility.BaseClass {
 	}
 
 	public void clickGoogleLogin() {
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		js.executeScript("arguments[0].click();", googleLogin);
+		clickElement(googleLogin);
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -127,7 +122,7 @@ public class HomePage extends Utility.BaseClass {
 			e.printStackTrace();
 		}
 	}
-	
+
 	// clicking the upcoming bikes link
 	public void clickLinkhome() {
 		waitForElement(driver, upcomingLink);

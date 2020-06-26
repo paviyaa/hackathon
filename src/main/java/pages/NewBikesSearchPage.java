@@ -28,7 +28,7 @@ public class NewBikesSearchPage extends Utility.BaseClass {
 
 	@FindBy(linkText = "Clear All")
 	WebElement clear;
-	
+
 	@FindBy(xpath = "//span[contains(text(),'Engine Capacity')]")
 	WebElement clickEngine;
 
@@ -72,10 +72,9 @@ public class NewBikesSearchPage extends Utility.BaseClass {
 	// Locate and passing the brand name in the filter
 	public void selectBrand(String brandname) {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		if(executionCount > 0)
+		if (!getEnteredValue(brand).isEmpty())
 			brand.clear();
 		brand.sendKeys(data.get(brandname));
-		executionCount++;
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		autoSuggest.click();
 

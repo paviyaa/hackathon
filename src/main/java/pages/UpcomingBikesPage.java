@@ -13,15 +13,15 @@ import Utility.ExcelUtils;
 public class UpcomingBikesPage extends Utility.BaseClass {
 
 	WebDriver driver;
-	Map<String,String> data;
-	
+	Map<String, String> data;
+
 	@FindBy(xpath = "//ol//li[2]//a[1]//span[1]")
 	WebElement resultTitle;
-	
-	@FindBy(xpath="//ol//li[3]//span[1]")
+
+	@FindBy(xpath = "//ol//li[3]//span[1]")
 	WebElement HondaTitle;
-	
-	@FindBy(xpath="//html//body//main//div//div//div//div//div//div//div//div//h1")
+
+	@FindBy(xpath = "//html//body//main//div//div//div//div//div//div//div//div//h1")
 	WebElement resultTitle2;
 
 	@FindBy(xpath = "//select[@id='makeId']")
@@ -45,7 +45,6 @@ public class UpcomingBikesPage extends Utility.BaseClass {
 	@FindBy(xpath = "//div[@id='carModels']//a[1]/strong/following::div[2]")
 	List<WebElement> expectedLaunch;
 
-
 	public UpcomingBikesPage(WebDriver driver) throws Exception {
 		this.driver = driver;
 		this.data = ExcelUtils.readExcel();
@@ -56,7 +55,7 @@ public class UpcomingBikesPage extends Utility.BaseClass {
 		selectInDropDown(selectManufacturerDropDown, data.get(manufacturer));
 		return getTextFromElements(driver, modelNames);
 	}
-	
+
 	public List<String> sortByLaunchDate() {
 		return getTextFromElements(driver, expectedLaunch);
 	}
@@ -101,17 +100,18 @@ public class UpcomingBikesPage extends Utility.BaseClass {
 	public void selectPriceCategory(String price) {
 		driver.findElement(By.linkText(data.get(price))).click();
 	}
-	
-	//getting title of the page
+
+	// getting title of the page
 	public String getTitle1() {
-	    return resultTitle.getText();
+		return resultTitle.getText();
 	}
-	//getting title of the page
+
+	// getting title of the page
 	public String getTitle2() {
-	    return resultTitle2.getText();
+		return resultTitle2.getText();
 	}
-	
+
 	public String getHondaTitle() {
-	    return HondaTitle.getText();
+		return HondaTitle.getText();
 	}
 }

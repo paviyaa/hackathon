@@ -62,10 +62,4 @@ public class Report {
 		test.log(Status.INFO, statement);
 	}
 
-//	public void takeScreenshotForFail(ExtentTest test, String fileName) throws IOException {
-//		test.fail("Captured Screenshot", MediaEntityBuilder
-//				.createScreenCaptureFromPath(Screenshot
-//						.captureScreenshot(fileName)).build());
-//	}
-
 }
