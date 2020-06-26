@@ -68,8 +68,6 @@ public class UpcomingBikesSearchBar extends Utility.BeginnerClass {
 		// Passing the text in Search Bar
 		homePage.setSearch("upcomingSearchText");
 		
-		Assert.assertTrue(false);
-		
 		// Updating the status of execution to RTM
 		xL.updateResultToRTM("<Search text> is displayed in the search bar");
 

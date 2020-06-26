@@ -29,7 +29,7 @@ public class UpcomingRequirement extends Utility.BeginnerClass {
 
 		// Initiating cell position for RTM to get update
 		xL.setRowCellValues(caseId);
-		
+
 		// Creating the Test for HTML
 		if (ExtentReport.log == null)
 			ExtentReport.log = ExtentReport.reports.createTest("UpcomingBIkes display");
@@ -143,7 +143,7 @@ public class UpcomingRequirement extends Utility.BeginnerClass {
 		System.out.println("Results are successfully written into output file ' Upcoming Requirements.xlsx ' !!!");
 		System.out.println("Path to File : ./test-output/Output Files/Upcoming Requirements.xlsx");
 		System.out.println("\n" + "***************************RESULT***************************");
-	
+
 	}
 
 	// To convert List of Strings into List of Integers
@@ -152,7 +152,7 @@ public class UpcomingRequirement extends Utility.BeginnerClass {
 		List<String> trimPrice = new ArrayList<String>();
 		List<Integer> intPrice = new ArrayList<Integer>();
 		for (String price : priceList) {
-			trimPrice.add(price.split("\\s+")[0]);
+			trimPrice.add(price.split("\\s+")[1]);
 		}
 		for (int i = 0; i < trimPrice.size(); i++) {
 			if (trimPrice.get(i).contains(",")) {
@@ -165,5 +165,5 @@ public class UpcomingRequirement extends Utility.BeginnerClass {
 		return intPrice;
 
 	}
-	
+
 }

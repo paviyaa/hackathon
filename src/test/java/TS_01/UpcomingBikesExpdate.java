@@ -107,7 +107,7 @@ public class UpcomingBikesExpdate extends Utility.BeginnerClass {
 		System.out.println("***************************RESULT***************************" + "\n");
 		System.out.println("Upcoming Honda Bikes (Exp Date) :");
 		for (int i = 0; i < bikesOfManufacturer.size() - 1; i++) {
-			String bike1[] = bikesOfManufacturer.get(i).replaceAll("Exp. Launch : ", "").split(" ");
+			String bike1[] = bikesOfManufacturer.get(i).replaceAll("Exp. Launch : ", "").replace("30 ", "").split(" ");
 			String bike2[] = bikesOfManufacturer.get(i + 1).replaceAll("Exp. Launch : ", "").split(" ");
 			int m1 = getMonthIndex(bike1[0]);
 			int m2 = getMonthIndex(bike2[0]);

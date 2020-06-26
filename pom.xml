@@ -116,11 +116,11 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>src/main/resources/TestSuites/${XmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
-					<systemPropertyVariables>
+					<!-- <systemPropertyVariables>
 						<executionBrowser>${Browser}</executionBrowser>
 						<environmentToUse>${Environment}</environmentToUse>
 						<URLForNode>${nodeURL}</URLForNode>
-					</systemPropertyVariables>
+					</systemPropertyVariables> -->
 				</configuration>
 			</plugin>
 
