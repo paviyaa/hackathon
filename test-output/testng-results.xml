@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="1" failed="0" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8597" started-at="2020-06-26T06:36:43Z" finished-at="2020-06-26T06:36:52Z">
+  <suite name="Default suite" duration-ms="32534" started-at="2020-06-26T07:10:43Z" finished-at="2020-06-26T07:11:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8597" started-at="2020-06-26T06:36:43Z" finished-at="2020-06-26T06:36:52Z">
-      <class name="TS_01.Check">
-        <test-method status="PASS" signature="reportSetUp()[pri:0, instance:TS_01.Check@928763c]" name="reportSetUp" is-config="true" duration-ms="1627" started-at="2020-06-26T06:36:42Z" finished-at="2020-06-26T06:36:43Z">
+    <test name="Default test" duration-ms="32534" started-at="2020-06-26T07:10:43Z" finished-at="2020-06-26T07:11:15Z">
+      <class name="TS_02.SearchusedCars">
+        <test-method status="PASS" signature="reportSetUp()[pri:0, instance:TS_02.SearchusedCars@7ed7259e]" name="reportSetUp" is-config="true" duration-ms="1552" started-at="2020-06-26T07:10:41Z" finished-at="2020-06-26T07:10:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportSetUp -->
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TS_01.Check@928763c]" name="setUp" is-config="true" duration-ms="7329" started-at="2020-06-26T06:36:43Z" finished-at="2020-06-26T06:36:51Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TS_02.SearchusedCars@7ed7259e]" name="setUp" is-config="true" duration-ms="7497" started-at="2020-06-26T07:10:43Z" finished-at="2020-06-26T07:10:50Z">
           <params>
             <param index="0">
               <value>
@@ -30,55 +30,206 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:TS_01.Check@928763c]" name="startBrowser" duration-ms="133" started-at="2020-06-26T06:36:51Z" finished-at="2020-06-26T06:36:51Z">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:TS_02.SearchusedCars@7ed7259e]" name="startBrowser" duration-ms="1042" started-at="2020-06-26T07:10:50Z" finished-at="2020-06-26T07:10:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_01.Check@928763c]" name="testResult" is-config="true" duration-ms="12" started-at="2020-06-26T06:36:51Z" finished-at="2020-06-26T06:36:51Z">
+        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_02.SearchusedCars@7ed7259e]" name="testResult" is-config="true" duration-ms="11" started-at="2020-06-26T07:10:51Z" finished-at="2020-06-26T07:10:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=startBrowser status=SUCCESS method=Check.startBrowser()[pri:0, instance:TS_01.Check@928763c] output={null}]]]>
+                <![CDATA[[TestResult name=startBrowser status=SUCCESS method=SearchusedCars.startBrowser()[pri:0, instance:TS_02.SearchusedCars@7ed7259e] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void TS_01.Check.startBrowser() throws java.io.IOException]]>
+                <![CDATA[public void TS_02.SearchusedCars.startBrowser() throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResult -->
-        <test-method status="PASS" signature="test()[pri:0, instance:TS_01.Check@928763c]" name="test" duration-ms="429" started-at="2020-06-26T06:36:51Z" finished-at="2020-06-26T06:36:51Z">
+        <test-method status="PASS" signature="clickSearchUsedCarsFromDrpdwn()[pri:1, instance:TS_02.SearchusedCars@7ed7259e]" name="clickSearchUsedCarsFromDrpdwn" duration-ms="1433" started-at="2020-06-26T07:10:51Z" finished-at="2020-06-26T07:10:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_01.Check@928763c]" name="testResult" is-config="true" duration-ms="8" started-at="2020-06-26T06:36:51Z" finished-at="2020-06-26T06:36:51Z">
+        </test-method> <!-- clickSearchUsedCarsFromDrpdwn -->
+        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_02.SearchusedCars@7ed7259e]" name="testResult" is-config="true" duration-ms="11" started-at="2020-06-26T07:10:53Z" finished-at="2020-06-26T07:10:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test status=SUCCESS method=Check.test()[pri:0, instance:TS_01.Check@928763c] output={null}]]]>
+                <![CDATA[[TestResult name=clickSearchUsedCarsFromDrpdwn status=SUCCESS method=SearchusedCars.clickSearchUsedCarsFromDrpdwn()[pri:1, instance:TS_02.SearchusedCars@7ed7259e] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void TS_01.Check.test()]]>
+                <![CDATA[public void TS_02.SearchusedCars.clickSearchUsedCarsFromDrpdwn() throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResult -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TS_01.Check@928763c]" name="closeBrowser" is-config="true" duration-ms="665" started-at="2020-06-26T06:36:51Z" finished-at="2020-06-26T06:36:52Z">
+        <test-method status="SKIP" signature="setCityFilter()[pri:2, instance:TS_02.SearchusedCars@7ed7259e]" name="setCityFilter" duration-ms="20502" started-at="2020-06-26T07:10:53Z" finished-at="2020-06-26T07:11:13Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //body/ul/li[1]/a[contains( text(),'Chennai')]' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //body/ul/li[1]/a[contains( text(),'Chennai')]' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at Utility.BaseClass.waitForElement(BaseClass.java:49)
+at pages.UsedCarPage.selectCity(UsedCarPage.java:50)
+at TS_02.SearchusedCars.setCityFilter(SearchusedCars.java:91)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//body/ul/li[1]/a[contains( text(),'Chennai')]"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RAWNA', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rawna\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1dae1968297042e1dce93fceae411503
+*** Element info: {Using=xpath, value=//body/ul/li[1]/a[contains( text(),'Chennai')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setCityFilter -->
+        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_02.SearchusedCars@7ed7259e]" name="testResult" is-config="true" duration-ms="11" started-at="2020-06-26T07:11:13Z" finished-at="2020-06-26T07:11:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=setCityFilter status=SKIP method=SearchusedCars.setCityFilter()[pri:2, instance:TS_02.SearchusedCars@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void TS_02.SearchusedCars.setCityFilter() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResult -->
+        <test-method status="PASS" signature="setCityFilter()[pri:2, instance:TS_02.SearchusedCars@7ed7259e]" name="setCityFilter" duration-ms="635" started-at="2020-06-26T07:11:13Z" finished-at="2020-06-26T07:11:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setCityFilter -->
+        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_02.SearchusedCars@7ed7259e]" name="testResult" is-config="true" duration-ms="8" started-at="2020-06-26T07:11:14Z" finished-at="2020-06-26T07:11:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=setCityFilter status=SUCCESS method=SearchusedCars.setCityFilter()[pri:2, instance:TS_02.SearchusedCars@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void TS_02.SearchusedCars.setCityFilter() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResult -->
+        <test-method status="PASS" signature="navigateToUsedCarsPage()[pri:3, instance:TS_02.SearchusedCars@7ed7259e]" name="navigateToUsedCarsPage" duration-ms="594" started-at="2020-06-26T07:11:14Z" finished-at="2020-06-26T07:11:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUsedCarsPage -->
+        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_02.SearchusedCars@7ed7259e]" name="testResult" is-config="true" duration-ms="6" started-at="2020-06-26T07:11:14Z" finished-at="2020-06-26T07:11:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateToUsedCarsPage status=SUCCESS method=SearchusedCars.navigateToUsedCarsPage()[pri:3, instance:TS_02.SearchusedCars@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void TS_02.SearchusedCars.navigateToUsedCarsPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResult -->
+        <test-method status="PASS" signature="outputDisplay()[pri:4, instance:TS_02.SearchusedCars@7ed7259e]" name="outputDisplay" duration-ms="121" started-at="2020-06-26T07:11:14Z" finished-at="2020-06-26T07:11:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- outputDisplay -->
+        <test-method status="PASS" signature="testResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TS_02.SearchusedCars@7ed7259e]" name="testResult" is-config="true" duration-ms="6" started-at="2020-06-26T07:11:15Z" finished-at="2020-06-26T07:11:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=outputDisplay status=SUCCESS method=SearchusedCars.outputDisplay()[pri:4, instance:TS_02.SearchusedCars@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void TS_02.SearchusedCars.outputDisplay()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResult -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TS_02.SearchusedCars@7ed7259e]" name="closeBrowser" is-config="true" duration-ms="640" started-at="2020-06-26T07:11:15Z" finished-at="2020-06-26T07:11:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:TS_01.Check@928763c]" name="flush" is-config="true" duration-ms="180" started-at="2020-06-26T06:36:52Z" finished-at="2020-06-26T06:36:52Z">
+        <test-method status="PASS" signature="flush()[pri:0, instance:TS_02.SearchusedCars@7ed7259e]" name="flush" is-config="true" duration-ms="161" started-at="2020-06-26T07:11:15Z" finished-at="2020-06-26T07:11:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-      </class> <!-- TS_01.Check -->
+      </class> <!-- TS_02.SearchusedCars -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

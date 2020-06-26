@@ -32,7 +32,7 @@ public class SearchByEngine extends Utility.BeginnerClass {
 		xL.setRowCellValues(caseId);
 
 		// Creating Search by brand Test for HTML
-		if (ExtentReport.log != null)
+		if (ExtentReport.log == null)
 			ExtentReport.log = ExtentReport.reports.createTest("Search new bikes by Engine");
 		logger = ExtentReport.log;
 

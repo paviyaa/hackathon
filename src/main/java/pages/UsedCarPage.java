@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import Utility.ExcelUtils;
 
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 
 public class UsedCarPage extends Utility.BaseClass {
 
@@ -37,10 +36,9 @@ public class UsedCarPage extends Utility.BaseClass {
 		return resultTitle.getText();
 	}
 
-	// Getting list of string of the usercars models
+	// Getting list of string of the Used Cars models
 	public List<String> getUsedcars() {
 		return getTextFromElements(driver, getusedCars);
-
 	}
 
 	// locate and pass the value
@@ -49,10 +47,8 @@ public class UsedCarPage extends Utility.BaseClass {
 			sendCity.clear();
 		}
 		sendCity.sendKeys(data.get(city));
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		waitForElement(driver, selectCity);
 		selectCity.click();
-
 	}
 
 }
