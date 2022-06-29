@@ -17,7 +17,7 @@
 		<testng.version>6.14.3</testng.version>
 		<extentreport.version>3.1.5</extentreport.version>
 		<commonsio.version>2.6</commonsio.version>
-		<poi.version>3.17</poi.version>
+		<poi.version>4.1.1</poi.version>
 		<webdrivermanager.version>4.0.0</webdrivermanager.version>
 		<maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
 		<maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
